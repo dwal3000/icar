@@ -70,14 +70,14 @@ ifndef F90
 endif
 
 ifndef FFTW
-	FFTW=/usr/local
+	FFTW=/glade/u/apps/ch/opt/fftw/3.3.7/intel/17.0.1/
 endif
 FFTW_PATH = ${FFTW}
 LIBFFT = -L${FFTW_PATH}/lib -lm -lfftw3
 INCFFT = -I${FFTW_PATH}/include
 
 ifndef NETCDF
-	NETCDF=/usr/local
+	NETCDF=/glade/u/apps/ch/opt/netcdf/4.4.1.1/intel/17.0.1/
 endif
 NCDF_PATH = ${NETCDF}
 LIBNETCDF = -L$(NCDF_PATH)/lib -lnetcdff -lnetcdf
